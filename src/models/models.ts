@@ -1,4 +1,4 @@
-class MessagePayload {
+export class MessagePayload {
   private _id?: string;
   private _timestamp?: string;
   private _userId?: string;
@@ -180,7 +180,7 @@ class MessagePayload {
     return instance;
   }
 }
-class Language {
+export class Language {
   private _locale?: string;
   private _probability?: number;
   private _additionalProperties?: Map<string, any>;
@@ -251,13 +251,13 @@ class Language {
 /**
  * Where the answer shall be sent to.
  */
-enum Destination {
+export enum Destination {
   CHAT = "Chat",
   CALL = "Call",
   VIDEO = "Video",
   OTHER = "Other",
 }
-class DestinationParams {
+export class DestinationParams {
   private _strings?: string[];
   private _additionalProperties?: Map<string, any>;
 
@@ -314,7 +314,7 @@ class DestinationParams {
 /**
  * Target format of the message content.
  */
-enum TargetFormat {
+export enum TargetFormat {
   RESERVED_TEXT = "Text",
   VIDEO = "Video",
   AUDIO = "Audio",
@@ -324,12 +324,12 @@ enum TargetFormat {
 /**
  * Who created the message.
  */
-enum MessageAuthor {
+export enum MessageAuthor {
   USER = "User",
   AGENT = "Agent",
   OTHER = "Other",
 }
-class ConversationPayload {
+export class ConversationPayload {
   private _id?: string;
   private _started?: string;
   private _userId?: string;
@@ -446,7 +446,7 @@ class ConversationPayload {
     return instance;
   }
 }
-class StreamingAnswerPayload {
+export class StreamingAnswerPayload {
   private _id?: string;
   private _timestamp?: string;
   private _userId?: string;
